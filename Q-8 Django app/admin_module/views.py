@@ -119,7 +119,7 @@ def product_detail(request, p_id):
     return render(request, "product_detail.html", context)
 
 
-@is_logged_in
+# @is_logged_in
 def show_details_view(request):
     details = product_details.objects.all()
 

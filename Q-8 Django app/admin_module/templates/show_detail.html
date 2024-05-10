@@ -48,6 +48,14 @@ thead th {
     top: 0; /* Fixes the header at the top of the table */
     background-color: #f9f9f9; /* Gives a background color to the header for visibility */
 }
+.image{
+    display: grid;
+    place-content: center;
+}
+img{
+    height: 50px;
+    width: auto;
+}
 
     </style>
 
@@ -74,7 +82,7 @@ thead th {
                         <td>{{detail.id}}</td>
                         <td>{{detail.product_name}}</td>
                         <td>{{detail.price}}</td>
-                        <td>{{detail.image}}</td>
+                        <td> <div class="image"><img src="{{ detail.image.url}}" alt=""></div> </td>
                         <td>{{detail.model}}</td>
                         <td>{{detail.ram}}</td>
                         <td>
